@@ -1,0 +1,75 @@
+1)
+Create folder in ur PC
+open vscode terminal 
+>git init
+>git clone <url>
+>cd <tab>(2 times)
+create a file(xxx.py) & write
+>git add .
+>git commit -m "hii"
+>git push url
+
+2)
+>git init
+>git clone <url>
+>cd <tab>(2 times)
+>git checkout -b feature-branch
+create a file(xxx.py) & write
+>git add .
+>git commit -m "hii"
+>git checkout main
+>git merge feature-branch 
+>git push origin main
+
+3)
+>git init
+>git clone <url>
+>cd <tab>(2 times)
+>git checkout -b feature-branch
+create a file(xxx.py) & write
+>git add .
+>git commit -m "hii"
+>git fetch origin
+>git rebase origin/main
+>git checkout main
+>git merge feature-branch 
+>git push origin main
+
+4)
+>git init
+>git clone <url>
+>cd <tab>(2 times)
+create a file(xxx.py) & write
+>git add .
+>git commit -m "hii"
+>git push <url>
+>git log
+>git tag v1.0 <commit id>(paste from log)
+>git push origin v1.0
+ extra
+>git git tag v2.0 <commit id>(paste from log) -m "hello"
+>git push origin v2.0
+
+5)
+>git checkout -b source-branch 
+create a file(xxx.py) & write
+>git add .
+>git push
+>git commit -m "hii"
+>git status
+>git log --oneline
+>git checkout - m main
+>git cherry-pick (copy the code after log oneline)
+ extra
+>git cherry-pick --continue
+
+6)
+create a file(xxx.py) & write
+>git add .
+>git commit -m "hii"
+>git push <url>
+>git log --oneline
+>git show <commit_id>(paste from log)
+>git log --author="xyz" --after="2024-03-01" --before="2024-03-31"
+>git log -n 1
+>git revert <commit id>
